@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Home Page</title>
+	<link rel="stylesheet" href="CSS file/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="arrow.jpg">		
+	
+	<style>
+		body {
+			overflow-x: hidden;
+		
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-repeat: no-repeat;
+			
+		}
+		
+		header {
+			background-color: #f6d3d3;
+			color: #fff;
+			padding: 20px;
+            height: 35px;
+            margin-top: 10px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+
+		nav li {
+			display: inline-block;
+			margin-right: 50px;
+            margin-bottom: 10px;
+
+		}
+		
+
+		
+        
+		
+		nav li:last-child {
+			margin-right: 0;
+		}
+
+
+		nav li:first-child {
+   			 margin-top: -20px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+            padding: 5px;
+
+		}
+
+		
+
+		
+		main {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 0 20px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+		}
+		
+		main h2 {
+			margin-top: 0;
+		}
+        
+		
+	
+		
+       
+	</style>
+	<script>
+		window.addEventListener('load', function() {
+			var bannerText = document.getElementById('bannerText');
+			var texts = ['Free Shipping On Subscription. Subscribe Now!', 'Get Your Own Snack Box Today!', 
+            'Sakura Theme Snack Box till 4/11!'];
+			var currentTextIndex = 0;
+			setInterval(function() {
+				bannerText.textContent = texts[currentTextIndex];
+				currentTextIndex = (currentTextIndex + 1) % texts.length;
+			}, 2000);
+		});
+	</script>
+
+</head>
+<body >
+	<header>
+        
+		<h1 align="center"><span id="bannerText">Free Shipping On Subscription. Subscribe Now</span></h1>
+		<nav>
+			<ul>
+                <li><div class="logo">
+					<a href="5thpage.html"><img src="Image FIle/sakura-tree logo.jpg" alt="Logo" width="120px" height="40px"></a></div>
+                </li>	
+				<li><a class="active"href="#" >Home</a></li>
+				<li><a href="2ndpage.html">Gallery</a></li>
+				<li><a href="3rdpage.html">Explore</a></li>
+				<li><a href="4thpage.html">Contact</a></li>
+                <li><form><input type="text" id="searchBar" placeholder="Search...">
+					<button type="submit" id="signupButtonn"><a href="https://youtu.be/dQw4w9WgXcQ">Sign Up</a></button>
+				</form></li>
+			</ul>
+		
+		</nav>
+		
+	</header>
+	
+	<main>
+		<div class="content">
+			<h1>Discover New World<br>Through Snacks Of Ours</h1>
+			<button class="cn"><a href="#">SUBSCRIBE</a></button>
+		</div>
+		<div class="sakura">
+			<h3>SAKURA SEASON IS HERE!!</h3>
+			<p>Only until 4/11, new subscribers get<br> 
+				our limited edition Sakura Story box<br> 
+				featuring Japan-exclusive cherry<br>
+				blossom snacks.</p>
+		</div>
+		
+		<img src="Image FIle/back-pink.webp" alt="Your Image" style="position: absolute; top: 60px; left: 0; right: 0; bottom: 60px; width: 100%; height: auto; z-index: -1;">
+		<br><br><br><br><br><br><br><br><br><br>
+		<div class="main-scroll-div" align="center">
+			<div>
+				
+			</div>
+
+		
+	</main>
+	
+	<footer>
+		
+		<div class="f-c">
+			<h3>Sakura Snack Box</h3>
+			<p>MORE THAN JUST A SNACKS</p>
+			<ul class="socials">
+				
+				<li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-youtube"></i></a></li>
+                
+		</div>
+		<div class="footer-bottom">
+            <p>copyright &copy;Sakura Snack Box <span>nethunt</span></p>
+        </div>
+	</footer>
+</body>
+</html>

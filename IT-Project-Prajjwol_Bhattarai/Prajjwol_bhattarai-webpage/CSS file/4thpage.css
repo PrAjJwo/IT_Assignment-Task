@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    
+}
+header {
+    background-color: #f6d3d3;
+    color: #fff;
+    padding: 20px;
+    height: 55px;
+    margin-top: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
+}
+a.active,a:hover{
+    background-color: #56d47c;
+    opacity: .5;
+    transition: .5s;
+    border-radius: 3px;
+}
+
+
+
+
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+
+nav li:first-child {
+        margin-top: -20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+nav a:hover {
+   text-shadow: 5px 5px 10px #8b0a0a;
+}
+
+footer{
+    position: absolute;
+    background: #111;
+    height: 200px;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 30px;
+    color: #fff;
+    margin-top: none;
+}
+.f-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.f-c h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.f-c p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 8px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem 1rem 0;
+}
+.socials li{
+    margin: 0 8px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.logo {
+    width:120px;
+    cursor:pointer;
+}
+#searchBar  {
+
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    background-color: #b7dbbe;
+
+    height:5px;
+    color: #fff;
+} 
+
+#searchBar input[type="text"] {
+      color: rgb(23, 19, 19);
+}
+#searchBar input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #3a9c4d;
+    margin-right: 10px;
+    outline: none;
+    }
+
+
+#searchBar i {
+    color: #3a9c4d;
+    font-size: 20px;
+    }
+
+#signupButtonn
+{
+    margin-left: 60px;
+    background-color: #ff7200;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 5px;
+
+
+}
+    
+#signupButtonn:hover
+{
+    
+   
+    box-shadow: 0 0 1px 1px #694848;
+      transition: box-shadow 0.5s; 
+    cursor:pointer;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(costumer1.jpeg);
+    background-repeat: no-repeat;
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#da3616; /* replace with your desired color */
+    z-index: -1;
+  }
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.contact .content p{
+    font-weight: 300;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
